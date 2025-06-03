@@ -19,9 +19,10 @@ st.write("""
 # --- 2. 데이터 로드 ---
 @st.cache_data
 def load_data():
+    base_dir='data/'
     # 로컬 경로(앱과 동일 디렉터리에 있어야 함)
-    df = pd.read_csv("data.csv")
-    center_df = pd.read_csv("center_points.csv")
+    df = pd.read_csv(base_dir+"data.csv")
+    center_df = pd.read_csv(base_dir+"center_points.csv")
     # centers: 첫 번째 컬럼(인덱스 역할)을 제외한 나머지 3개 칼럼 사용
     centers = center_df.values[:, 1:4]
     return df, centers

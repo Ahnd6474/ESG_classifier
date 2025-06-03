@@ -157,11 +157,7 @@ with col2:
 # --- 10. 하단 설명 ---
 st.write("""
 ---
-- **`data.csv`**: 환경(environment_score), 사회(social_score), 지배구조(governance_score) 점수를  
-  포함한 원본 데이터 파일  
-- **`center_points.csv`**: 첫 번째 컬럼은 인덱스, 두 번째~네 번째 컬럼은 각각  
-  `environment_score`, `social_score`, `governance_score`에 해당하는 클러스터 센터 좌표  
-- 이 예제에서는 **KMeans**를 이용해 미리 계산된 센터 값을 사용하며,  
+- **KMeans**를 이용해 미리 계산된 센터 값을 사용하며,  
   각 데이터 포인트는 “센터와의 유클리드 거리”를 기반으로 가장 가까운 클러스터에 할당합니다.
 
 - 새로운 점수를 사이드바에 입력하면, 가장 가까운 클러스터를 예측하고 3D 시각화 결과를 바로 확인할 수 있습니다.
